@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <RestKit/RestKit.h>
+#import "Article.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //creating an Object Manager to access the response later
+    NSURL *baseURL = [NSURL URLWithString:@"http://www.ckl.io/challenge/"];
+    AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
+    RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
+    
+    //setup object for mapping an Article
+    RKObjectMapping *mapping = [RKObjectMapping mappingForClass:[Article class]];
+    [mapping addAttributeMappingsFromArray:@[@"title", @"authors", @"website", @"content", @"date"]];
+    
+    //setup the range of status -> all in this case
+    NSIndexSet *statusCode = RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful);
+    
+    //creating the response descriptor that will receive the JSON response
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:mapping method:RKRequestMethodAny pathPattern:nil keyPath:nil statusCodes:statusCode];
+    [objectManager addResponseDescriptor:responseDescriptor];
     return YES;
 }
 
