@@ -10,6 +10,7 @@
 		26BA00247172BB0CCFD1B27A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEF0D7201BE3460FC2EEC2D /* libPods.a */; };
 		6302F93D1AC393B800DB277E /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302F93C1AC393B800DB277E /* ArticleViewController.m */; };
 		6302F9401AC3950300DB277E /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302F93F1AC3950300DB277E /* Article.m */; };
+		6302F9441AC3B2DA00DB277E /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6302F9431AC3B2DA00DB277E /* ContentViewController.m */; };
 		63AC56131AC2683C009D7D01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AC56121AC2683C009D7D01 /* main.m */; };
 		63AC56161AC2683C009D7D01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AC56151AC2683C009D7D01 /* AppDelegate.m */; };
 		63AC56191AC2683C009D7D01 /* ckl_challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63AC56171AC2683C009D7D01 /* ckl_challenge.xcdatamodeld */; };
@@ -35,6 +36,8 @@
 		6302F93C1AC393B800DB277E /* ArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleViewController.m; sourceTree = "<group>"; };
 		6302F93E1AC3950300DB277E /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
 		6302F93F1AC3950300DB277E /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		6302F9421AC3B2DA00DB277E /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		6302F9431AC3B2DA00DB277E /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		63AC560D1AC2683C009D7D01 /* ckl_challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ckl_challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AC56111AC2683C009D7D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63AC56121AC2683C009D7D01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				63AC56151AC2683C009D7D01 /* AppDelegate.m */,
 				6302F93B1AC393B800DB277E /* ArticleViewController.h */,
 				6302F93C1AC393B800DB277E /* ArticleViewController.m */,
+				6302F9421AC3B2DA00DB277E /* ContentViewController.h */,
+				6302F9431AC3B2DA00DB277E /* ContentViewController.m */,
 				6302F93E1AC3950300DB277E /* Article.h */,
 				6302F93F1AC3950300DB277E /* Article.m */,
 				63AC561D1AC2683C009D7D01 /* Main.storyboard */,
@@ -288,6 +293,7 @@
 			files = (
 				6302F93D1AC393B800DB277E /* ArticleViewController.m in Sources */,
 				63AC56161AC2683C009D7D01 /* AppDelegate.m in Sources */,
+				6302F9441AC3B2DA00DB277E /* ContentViewController.m in Sources */,
 				6302F9401AC3950300DB277E /* Article.m in Sources */,
 				63AC56131AC2683C009D7D01 /* main.m in Sources */,
 				63AC56191AC2683C009D7D01 /* ckl_challenge.xcdatamodeld in Sources */,

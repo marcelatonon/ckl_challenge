@@ -8,6 +8,7 @@
 
 #import "ArticleViewController.h"
 #import "Article.h"
+#import "ContentViewController.h"
 #import <RestKit/RestKit.h>
 
 @interface ArticleViewController ()
@@ -60,5 +61,23 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.articles.count;
 }
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"selecionou linha %ld", (long)indexPath.row);
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"entreou");
+    if ([[segue identifier] isEqualToString:@"contentSegue"]) {
+        ContentViewController *detailViewController = [segue destinationViewController];
+        NSInteger indexArticle = [[self.tableView indexPathForSelectedRow] row];
+        detailViewController.article = [self.articles objectAtIndex:indexArticle];
+    }
+}
+
 
 @end
