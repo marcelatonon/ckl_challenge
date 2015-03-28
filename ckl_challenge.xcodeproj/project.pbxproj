@@ -18,6 +18,9 @@
 		63AC56211AC2683C009D7D01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AC56201AC2683C009D7D01 /* Images.xcassets */; };
 		63AC56241AC2683C009D7D01 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63AC56221AC2683C009D7D01 /* LaunchScreen.xib */; };
 		63AC56301AC2683C009D7D01 /* ckl_challengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AC562F1AC2683C009D7D01 /* ckl_challengeTests.m */; };
+		63CEB9661AC4C594000A2BD3 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CEB9641AC4C594000A2BD3 /* background.png */; };
+		63CEB9671AC4C594000A2BD3 /* cheesecake.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CEB9651AC4C594000A2BD3 /* cheesecake.png */; };
+		63E5BA4D1AC6294300C56745 /* ArticleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E5BA4C1AC6294300C56745 /* ArticleTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,10 @@
 		63AC56291AC2683C009D7D01 /* ckl_challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ckl_challengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AC562E1AC2683C009D7D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63AC562F1AC2683C009D7D01 /* ckl_challengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ckl_challengeTests.m; sourceTree = "<group>"; };
+		63CEB9641AC4C594000A2BD3 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Images/background.png; sourceTree = "<group>"; };
+		63CEB9651AC4C594000A2BD3 /* cheesecake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cheesecake.png; path = Images/cheesecake.png; sourceTree = "<group>"; };
+		63E5BA4B1AC6294300C56745 /* ArticleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleTableViewCell.h; sourceTree = "<group>"; };
+		63E5BA4C1AC6294300C56745 /* ArticleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleTableViewCell.m; sourceTree = "<group>"; };
 		9BD7871490EDD042931BB235 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CEEF0D7201BE3460FC2EEC2D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,6 +111,7 @@
 		63AC560F1AC2683C009D7D01 /* ckl_challenge */ = {
 			isa = PBXGroup;
 			children = (
+				63CEB9631AC4C58A000A2BD3 /* Images */,
 				63AC56141AC2683C009D7D01 /* AppDelegate.h */,
 				63AC56151AC2683C009D7D01 /* AppDelegate.m */,
 				6302F93B1AC393B800DB277E /* ArticleViewController.h */,
@@ -117,6 +125,8 @@
 				63AC56221AC2683C009D7D01 /* LaunchScreen.xib */,
 				63AC56171AC2683C009D7D01 /* ckl_challenge.xcdatamodeld */,
 				63AC56101AC2683C009D7D01 /* Supporting Files */,
+				63E5BA4B1AC6294300C56745 /* ArticleTableViewCell.h */,
+				63E5BA4C1AC6294300C56745 /* ArticleTableViewCell.m */,
 			);
 			path = ckl_challenge;
 			sourceTree = "<group>";
@@ -145,6 +155,15 @@
 				63AC562E1AC2683C009D7D01 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63CEB9631AC4C58A000A2BD3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				63CEB9641AC4C594000A2BD3 /* background.png */,
+				63CEB9651AC4C594000A2BD3 /* cheesecake.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		74F28493D63747CE8AA8E14B /* Pods */ = {
@@ -239,8 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				63AC561F1AC2683C009D7D01 /* Main.storyboard in Resources */,
+				63CEB9661AC4C594000A2BD3 /* background.png in Resources */,
 				63AC56241AC2683C009D7D01 /* LaunchScreen.xib in Resources */,
 				63AC56211AC2683C009D7D01 /* Images.xcassets in Resources */,
+				63CEB9671AC4C594000A2BD3 /* cheesecake.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +315,7 @@
 				6302F93D1AC393B800DB277E /* ArticleViewController.m in Sources */,
 				63AC56161AC2683C009D7D01 /* AppDelegate.m in Sources */,
 				6302F9441AC3B2DA00DB277E /* ContentViewController.m in Sources */,
+				63E5BA4D1AC6294300C56745 /* ArticleTableViewCell.m in Sources */,
 				6302F9401AC3950300DB277E /* Article.m in Sources */,
 				63AC56131AC2683C009D7D01 /* main.m in Sources */,
 				63AC56191AC2683C009D7D01 /* ckl_challenge.xcdatamodeld in Sources */,
