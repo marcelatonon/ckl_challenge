@@ -15,5 +15,6 @@
 @property (nonatomic, strong) NSString *website;
 @property (nonatomic, strong) NSString *content;
 @property (nonatomic, strong) NSDate *date;
+@property (nonatomic) bool read;
 
 @end
